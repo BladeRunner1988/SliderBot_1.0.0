@@ -2,7 +2,7 @@ package com.example.rifat.sliderbot.Activities;
 
 import java.util.Locale;
 
-import android.support.v7.app.ActionBarActivity;
+
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -10,6 +10,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -20,7 +21,7 @@ import android.widget.TextView;
 
 import com.example.rifat.sliderbot.R;
 
-public class HowToUseActivity extends ActionBarActivity {
+public class HowToUseActivity extends AppCompatActivity {
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
