@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4dp"
+    tools:context="com.example.rifat.sliderbot.SettingsActivity">
+
+    <TextView
+        android:id="@+id/tvPresets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Presets:"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1.0"
+        android:layout_below="@id/tvPresets">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="#ff365a18"
+            android:layout_weight=".5">
+
+            <TextView
+                android:id="@+id/tvConfigZero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Config #0: Default"
+                android:textSize="20sp"
+                android:layout_alignBaseline="@+id/btnEditConfigOne"/>
+
+            <Button
+                android:id="@+id/btnEditConfigOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_toRightOf="@+id/tvConfigZero"
+                />
+
+            <TextView
+                android:id="@+id/tvConfigOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#1: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvConfigTwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#2: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvConfigThree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#3: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvConfigFour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#4: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:padding="4dp"
+            android:background="#ff321751"
+            android:layout_weight=".5">
+
+            <TextView
+                android:id="@+id/tvConfigFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#5: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvConfigSix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#6: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvConfigSeven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#7: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvConfigEight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#8: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tvConfigNine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#9: Time: xxxx, Travel: yyyy"
+                android:textSize="20sp"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
