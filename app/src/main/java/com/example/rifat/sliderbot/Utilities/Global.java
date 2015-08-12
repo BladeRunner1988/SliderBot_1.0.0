@@ -10,6 +10,16 @@ import java.util.ArrayList;
 public class Global extends Application {
     private ArrayList myPresets;
     private boolean motion; // If this is false then backwardMotion and if true then forwardMotion
+    private String testString = "This is a Test String";
+    private String sharedPreferenceName = "MyPrefs";
+
+    public String getSharedPreferenceName() {
+        return sharedPreferenceName;
+    }
+
+    public String getTestString() {
+        return testString;
+    }
 
     public ArrayList<MySliderPresets> getMyPresets() {
         return myPresets;

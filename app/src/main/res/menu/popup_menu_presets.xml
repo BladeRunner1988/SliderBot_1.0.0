@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemPresetOne"
+        android:title="Preset1"/>
+
+    <item
+        android:id="@+id/itemPresetTwo"
+        android:title="Preset2"/>
+
+    <item
+        android:id="@+id/itemPresetThree"
+        android:title="Preset3"/>
+
+    <item
+        android:id="@+id/itemPresetFour"
+        android:title="Preset4"/>
+
+    <item
+        android:id="@+id/itemPresetFive"
+        android:title="Preset5"/>
+
+</menu>

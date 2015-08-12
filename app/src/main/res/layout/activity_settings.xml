@@ -1,5 +1,6 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="4dp"
@@ -17,7 +18,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/tvPresets">
+        android:layout_weight="1">
 
         <LinearLayout
             android:orientation="vertical"
@@ -26,8 +27,7 @@
             android:layout_weight="1"
             android:layout_margin="4dp"
             android:padding="8dp"
-            android:background="#ff150088"
-            android:weightSum="1">
+            android:background="#ff150088">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -39,96 +39,116 @@
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_marginBottom="5dp"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#1.    "
-                    android:textSize="15sp"/>
+                    android:layout_height="match_parent"
+                    android:text="#1."
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Default"/>
+                    android:id="@+id/btnPresetOne"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Default"
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_marginBottom="5dp"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#2.    "
-                    android:textSize="15sp"/>
+                    android:layout_height="match_parent"
+                    android:text="#2."
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Default"/>
+                    android:id="@+id/btnPresetTwo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Default"
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_marginBottom="5dp"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#3.    "
-                    android:textSize="15sp"/>
+                    android:layout_height="match_parent"
+                    android:text="#3."
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Default"/>
+                    android:id="@+id/btnPresetThree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Default"
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_marginBottom="5dp"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#4.    "
-                    android:textSize="15sp"/>
+                    android:layout_height="match_parent"
+                    android:text="#4."
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Default"/>
+                    android:id="@+id/btnPresetFour"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Default"
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_marginBottom="5dp"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="#5.    "
-                    android:textSize="15sp"/>
+                    android:layout_height="match_parent"
+                    android:text="#5."
+                    android:textSize="15sp"
+                    android:gravity="center_vertical"/>
 
                 <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:text="Default"/>
+                    android:id="@+id/btnPresetFive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Default"
+                    android:layout_weight="1"/>
 
             </LinearLayout>
 
@@ -180,6 +200,7 @@
                         android:textStyle="bold"/>
 
                     <TextView
+                        android:id="@+id/tvEditName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Default"
@@ -202,6 +223,7 @@
                         android:textSize="25sp"/>
 
                     <TextView
+                        android:id="@+id/tvEditTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Empty"
@@ -225,6 +247,7 @@
                         android:textSize="25sp"/>
 
                     <TextView
+                        android:id="@+id/tvEditTravel"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Empty"
@@ -234,6 +257,7 @@
                 </LinearLayout>
 
                 <Button
+                    android:id="@+id/btnEditPreset"
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_weight="1"
@@ -246,4 +270,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>
